@@ -1,15 +1,71 @@
 html, body {
 	margin: 0;
 	padding: 0;
-	height: 100%;
-}
-
-h1 {
-	font-family: 'Comic Sans MS', 'Comic Sans', sans-serif;
 }
 
 body {
-	background-image: linear-gradient(red, orange, yellow, green, blue);
-	background-repeat: no-repeat;
+	background-image: url(assets/background.jpg);
 	background-attachment: fixed;
+	background-size: cover;
+	overflow: hidden;
+}
+
+.saying {
+	font-family: 'UnifrakturMaguntia', cursive;
+	font-size: 81px;
+	font-style: italic;
+	text-align: center;
+}
+
+.whale {
+	position: absolute;
+	margin: auto;
+	animation: 5s whale-move infinite;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+@keyframes whale-move {
+	0% {
+		top: 0;
+		left: 0;
+	}
+	10% {
+		top: -167px;
+		left: 50px;
+	}
+	20% {
+		top: 190px;
+		left: -190px;
+	}
+	30% {
+		top: -600px;
+		left: -53px;
+	}
+	40% {
+		top: 0;
+		left: 0;
+	}
+	50% {
+		top: -200px;
+		left: 14px;
+	}
+	60% {
+		top: -100px;
+		left: 160px;
+	}
+	70% {
+		top: 14px;
+		left: 280px;
+	}
+	80% {
+		top: 300px;
+		left: 100px;
+	}
+	90% {
+		top: 100px;
+		left: -120px;
+	}
 }
